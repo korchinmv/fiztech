@@ -1,0 +1,9 @@
+// базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+@import './components/elements/sticker';
+
+@import './components/cards/catalog-card';
