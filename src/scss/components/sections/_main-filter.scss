@@ -1,0 +1,235 @@
+.main-filter {
+  &__head {
+    padding: 16px 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      padding-right: 27px;
+      border-right: 1px solid #e6e6e6;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #333;
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: auto;
+  }
+}
+
+.checkbox-wrapper {
+  display: flex;
+  column-gap: 30px;
+
+  &--diameter {
+    column-gap: 20px;
+  }
+
+  &--class {
+    column-gap: 6px;
+  }
+
+  &--fitting {
+    justify-content: space-around;
+    width: 330px;
+  }
+
+  &--ip {
+    column-gap: 6px;
+  }
+
+  input {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__label-diameter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    row-gap: 4px;
+    position: relative;
+    height: 60px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #6d6d6d;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--red-color);
+    }
+
+    .diameter-radio {
+      svg {
+        circle {
+          transition: stroke 0.2s ease;
+        }
+      }
+    }
+
+    &.active {
+      color: var(--red-color);
+
+      .diameter-radio svg circle {
+        stroke: var(--red-color);
+      }
+    }
+  }
+
+  &__label-class {
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 8px 20px;
+    width: 60px;
+    height: 33px;
+    background-color: #f7f7f9;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #6d6d6d;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--red-color);
+    }
+
+    .class-radio {
+      transition: all 0.2s ease;
+    }
+
+    &.active {
+      color: var(--red-color);
+
+      .class-radio {
+        border: 2px solid var(--red-color);
+      }
+    }
+  }
+
+  &__label-fitting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    row-gap: 4px;
+    position: relative;
+    height: 60px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #6d6d6d;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--red-color);
+    }
+
+    .fitting-radio {
+      svg {
+        path,
+        rect {
+          transition: stroke 0.2s ease;
+        }
+      }
+    }
+
+    &.active {
+      color: var(--red-color);
+
+      .fitting-radio svg {
+        path,
+        rect {
+          stroke: var(--red-color);
+        }
+      }
+    }
+  }
+
+  &__label-ip {
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 8px 16px;
+    width: 60px;
+    height: 33px;
+    background-color: #f7f7f9;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #6d6d6d;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--red-color);
+    }
+
+    .ip-radio {
+      transition: all 0.2s ease;
+    }
+
+    &.active {
+      color: var(--red-color);
+
+      .ip-radio {
+        border: 2px solid var(--red-color);
+      }
+    }
+  }
+
+  .diameter-radio {
+    display: block;
+    align-self: flex-end;
+    background-color: transparent;
+  }
+
+  .fitting-radio {
+    display: block;
+    align-self: center;
+  }
+
+  .class-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    text-align: center;
+  }
+
+  .ip-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    text-align: center;
+  }
+}

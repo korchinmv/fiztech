@@ -1,0 +1,32 @@
+.slider-pagination {
+  display: flex;
+  column-gap: 20px;
+
+  @media screen and (width <= 768px) {
+    column-gap: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: var(--white-color);
+    opacity: 1;
+
+    @media screen and (width <= 768px) {
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background-color: var(--red-color);
+    transition: all ease 0.3s;
+
+    @media screen and (width <= 768px) {
+      width: 9px;
+      height: 9px;
+    }
+  }
+}
