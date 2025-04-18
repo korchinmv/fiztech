@@ -4,6 +4,7 @@
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     display: flex;
+    justify-content: space-between;
     column-gap: 20px;
   }
 
@@ -28,6 +29,106 @@
   &__list {
     display: flex;
     margin-top: auto;
+  }
+
+  &__bot {
+    display: flex;
+    column-gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__more-btn {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 12px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+    height: 40px;
+    flex-shrink: 0;
+
+    &:hover {
+      color: var(--white-color);
+      opacity: 0.8;
+    }
+  }
+
+  &__range-inputs {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__range-input {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px !important;
+    background: #f2f2f2 !important;
+    padding: 10px !important;
+  }
+
+  &__slider {
+
+    .noUi-base {
+      width: 100%;
+    }
+
+    // .noUi-handle-lower,
+    // .noUi-handle-upper {
+    //   background-color: var(--red-color);
+    // }
+
+    .noUi-connects {
+      height: 4px;
+      background-color: var(--red-color);
+    }
+
+    .noUi-connect {
+      background-color: var(--red-color);
+    }
+
+    .noUi-handle {
+      background-color: var(--red-color);
+      width: 16px;
+      height: 16px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: none;
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+
+    .noUi-target {
+      background: none;
+      border-radius: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    margin-bottom: 24px;
+  }
+
+  &__range-btn {
+    background-color: #2c2a2c;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--red-color);
+    }
   }
 }
 
@@ -149,6 +250,7 @@
 
     .fitting-radio {
       svg {
+
         path,
         rect {
           transition: stroke 0.2s ease;
@@ -160,6 +262,7 @@
       color: var(--red-color);
 
       .fitting-radio svg {
+
         path,
         rect {
           stroke: var(--red-color);
