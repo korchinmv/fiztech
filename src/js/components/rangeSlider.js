@@ -14,11 +14,11 @@ const inputsPriceRangeSlider = [
 
 if (filterPriceRangeSlider) {
   noUiSlider.create(filterPriceRangeSlider, {
-    start: [0, 1800],
-    step: 100,
+    start: [0, 20000],
+    step: 1000,
     connect: true,
     range: {
-      min: [300],
+      min: [100],
       max: [25500],
     },
     format: {
