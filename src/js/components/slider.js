@@ -16,119 +16,62 @@ const heroSwiper = new Swiper(".hero-slider__slider", {
   },
 });
 
-// const clientsSwiper = new Swiper(".clients__slider", {
-//   slidesPerView: 2,
-//   spaceBetween: 16,
-//   navigation: {
-//     nextEl: ".clients__slider-controls-next",
-//     prevEl: ".clients__slider-controls-prev",
-//   },
-//   pagination: {
-//     el: ".clients__pagination",
-//     type: "progressbar",
-//   },
-//   breakpoints: {
-//     // when window width is >= 990px
-//     990: {
-//       slidesPerView: 4,
-//       spaceBetween: 24,
-//     },
+const productsSliderCol1 = new Swiper("#products-col-1", {
+  slidesPerView: 1.1,
+  enabled: true,
+  spaceBetween: 16,
+  breakpoints: {
+    480: {
+      enabled: false,
+      spaceBetween: 0,
+    },
+  },
+});
 
-//     630: {
-//       slidesPerView: 3,
-//       spaceBetween: 24,
-//     },
-//   },
-// });
+const productsSliderCol2 = new Swiper("#products-col-2", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  enabled: true,
+  breakpoints: {
+    480: {
+      enabled: false,
+      spaceBetween: 0,
+    },
+  },
+});
 
-// const productsHitsSwiper = new Swiper("#products-hits", {
-//   slidesPerView: 1.1,
-//   spaceBetween: 24,
-//   navigation: {
-//     prevEl: ".products-hits-prev",
-//     nextEl: ".products-hits-next",
-//   },
-//   pagination: {
-//     el: ".products-hits-pagination",
-//     type: "progressbar",
-//   },
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 2,
-//       spaceBetween: 24,
-//     },
-//     990: {
-//       slidesPerView: 2,
-//       spaceBetween: 16,
-//     },
-//   },
-// });
+const productsSliderCol3 = new Swiper("#products-col-3", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  enabled: true,
+  breakpoints: {
+    480: {
+      enabled: false,
+      spaceBetween: 0,
+    },
+  },
+});
 
-// const productsHitsCatalogSwiper = new Swiper("#products-hits-catalog", {
-//   slidesPerView: 1.1,
-//   spaceBetween: 24,
-//   navigation: {
-//     prevEl: ".products-hits-prev",
-//     nextEl: ".products-hits-next",
-//   },
-//   pagination: {
-//     el: ".products-hits-pagination",
-//     type: "progressbar",
-//   },
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 4,
-//       spaceBetween: 24,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 16,
-//     },
-//     576: {
-//       slidesPerView: 2,
-//       spaceBetween: 16,
-//     },
-//   },
-// });
+const productsSliderCol4 = new Swiper("#products-col-4", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  enabled: true,
+  breakpoints: {
+    480: {
+      enabled: false,
+      spaceBetween: 0,
+    },
+  },
+});
 
-// const productsMonthSwiper = new Swiper("#products-month", {
-//   slidesPerView: 1.1,
-//   spaceBetween: 16,
-//   navigation: {
-//     prevEl: ".products-month-prev",
-//     nextEl: ".products-month-next",
-//   },
-//   pagination: {
-//     el: ".products-month-pagination",
-//     type: "progressbar",
-//   },
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 2,
-//       spaceBetween: 24,
-//     },
-//     990: {
-//       slidesPerView: 2,
-//       spaceBetween: 16,
-//     },
-//   },
-// });
-
-// const articlesSwiper = new Swiper("#articles", {
-//   slidesPerView: 1.1,
-//   spaceBetween: 16,
-//   navigation: {
-//     prevEl: ".articles-prev",
-//     nextEl: ".articles-next",
-//   },
-//   pagination: {
-//     el: ".articles-pagination",
-//     type: "progressbar",
-//   },
-//   breakpoints: {
-//     1140: {
-//       slidesPerView: 2,
-//       spaceBetween: 24,
-//     },
-//   },
-// });
+const productsSliderCol5 = new Swiper("#products-col-5", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  enabled: true,
+  breakpoints: {
+    480: {
+      enabled: false,
+      spaceBetween: 0,
+    },
+  },
+});
