@@ -1,0 +1,131 @@
+.info-block {
+  position: fixed;
+  right: 0;
+  bottom: 104px;
+  width: 132px; // Фиксированная ширина в закрытом состоянии
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 3px 23px -4px rgba(0, 0, 0, 0.25);
+  background: var(--white-color);
+  z-index: 100000;
+  overflow: hidden; // Для анимации
+  transition: width 0.3s ease; // Анимация изменения ширины
+
+  &--active {
+    width: auto; // Автоматическая ширина при раскрытии
+    min-width: 132px; // Минимальная ширина
+
+    .info-block__text-span {
+      color: var(--red-color);
+    }
+
+    .info-block__text-arrow {
+      opacity: 1;
+      visibility: visible;
+      width: 8px;
+    }
+
+    .info-block__text-svg {
+      transform: rotate(180deg);
+    }
+
+    .info-block__list {
+      opacity: 1;
+      visibility: visible;
+      max-height: 500px;
+      padding: 16px 16px 0 24px;
+      transform: translateY(0);
+      margin-bottom: 12px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+    background-color: var(--red-color);
+    z-index: 2;
+  }
+
+  &__list {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    padding: 0 16px;
+    background: var(--white-color);
+
+    border-radius: inherit;
+    transition: all 0.3s ease;
+    transform: translateY(-10px);
+    overflow: hidden;
+    width: max-content; // Ширина по содержимому
+    min-width: 100%; // Минимальная ширина как у родителя
+  }
+
+  // Остальные стили остаются без изменений
+  &__item {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e6e6e6;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #383838;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--red-color);
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+    cursor: pointer;
+    padding: 16px 16px 16px 24px;
+    position: relative;
+    z-index: 3;
+    white-space: nowrap; // Текст не переносится
+
+    &:hover {
+      .info-block__text-span {
+        color: var(--red-color);
+      }
+    }
+  }
+
+  &__text-span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #383838;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__text-arrow {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.3s;
+  }
+
+  &__text-svg {
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+}
