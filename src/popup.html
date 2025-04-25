@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <main class="main">
+    <div class="fancybox-content product-parameters">
+      <h3 class="product-parameters__title">Выберите параметры товара</h3>
+
+      <div class="product-parameters__inner">
+        <img class="product-parameters__img" src="img/product/1.jpg" alt="Картинка">
+
+        <div class="product-parameters__info">
+          <h4 class="product-parameters__product-title">Вакуумметры, мановакуумметры, манометры общетехнические ВП2-Уф,
+            МВП2-Уф,
+            МП2-Уф</h4>
+
+          <ul class="product-parameters__list">
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Тип измеряемого давления*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Пределы давлений*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Номинальный диаметр корпуса*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Резьба штуцера*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Исполнение контактной группы*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Класс точности*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Степень пылевлагозащиты*</span>
+
+              <div class="">селект</div>
+            </li>
+
+            <li class="product-parameters__item">
+              <span class="product-parameters__name">Расположение штуцера*</span>
+
+              <div class="">селект</div>
+            </li>
+          </ul>
+
+          <span class="product-parameters__name">Дополнительный комментари</span>
+          <textarea class="product-parameters__comment" placeholder="Введите комментарий"></textarea>
+
+          <div class="product-parameters__bottom">
+            <div class="product-parameters__left">
+              <span class="product-parameters__name">Количество</span>
+
+              <div class="product-parameters__counter-button counter-button">
+                <button class="counter-button__decrement" id="decrementBtn">-</button>
+                <input class="counter-button__num" type="text" id="counter" min="1" value="1">
+                <button class="counter-button__increment" id="incrementBtn">+</button>
+              </div>
+            </div>
+            <div class="product-parameters__right">
+              <div class="product-parameters__price-wrap">
+                <span class="product-parameters__price-name">Цена:</span>
+                <span class="product-parameters__price-product">482 ₽/шт</span>
+              </div>
+              <div class="product-parameters__price-wrap">
+                <span class="product-parameters__price-name">Стоимость:</span>
+
+                <div class="product-parameters__price-inner">
+                  <span class="product-parameters__price">1 446 ₽</span>
+                  <span class="product-parameters__nds">Цена без НДС</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-parameters__btns">
+            <button class="product-parameters__btn-trans">Быстрый заказ</button>
+            <button class="product-parameters__btn-red">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

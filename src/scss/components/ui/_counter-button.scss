@@ -1,0 +1,44 @@
+.counter-button {
+  border-radius: 5px;
+  background: #d8d8d8;
+  width: 172px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__num {
+    border-radius: 3px;
+    height: 41px !important;
+    width: 96px !important;
+    background-color: var(--white-color) !important;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 1.6;
+    text-align: right;
+    text-align: center;
+    color: var(--black-color);
+    border: none !important;
+  }
+
+  &__decrement {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &__increment {
+    border-radius: 0 5px 0 5px;
+  }
+
+  &__decrement,
+  &__increment {
+    width: 100%;
+    transition: color 0.3s;
+    font-size: 20px !important;
+    height: 100%;
+
+
+    &:hover {
+      color: var(--red-color);
+    }
+  }
+}
